@@ -1,0 +1,45 @@
+/* Simple CSS Tree */
+.vtree ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	position: relative;
+}
+.vtree li {
+	list-style-type: none;
+	border-left: 2px solid #4A7EBB;
+	margin-left: 3em;
+}
+.vtree li > div {
+	padding-left: 1em;
+	position: relative;
+}
+.vtree li > div::before {
+	content:'';
+	position: absolute;
+	top: 0;
+	left: -2px;
+	bottom: 50%;
+	width: 1em;
+	border: 2px solid #4A7EBB;
+	border-top: 0 none transparent;
+	border-right: 0 none transparent;
+}
+.vtree li.firstLevel > div::before {
+	display: none;
+}
+.vtree ul > li:last-child {
+	border-left: 2px solid transparent;
+}
+.vtree .box {
+	display: inline-block;
+	margin-top: 1em;
+}
+.vtree .box {
+	width: 12em;
+	border: #8EB4E3 medium solid;
+	border-radius: 1em;
+	padding: 0.5em;
+	text-align: left;
+	position: relative;
+}
