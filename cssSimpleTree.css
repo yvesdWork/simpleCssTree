@@ -1,4 +1,10 @@
 /* Simple CSS Tree */
+/* By Yves Dessertine. https://github.com/yvesdWork/simpleCssChart */
+/* This software is licensed under LGPL License */
+
+
+/* Part I : stucture */
+
 .vtree ul {
 	padding: 0;
 	margin: 0;
@@ -7,8 +13,6 @@
 }
 .vtree li {
 	list-style-type: none;
-	border-left: 2px solid #4A7EBB;
-	margin-left: 3em;
 }
 .vtree li > div {
 	padding-left: 1em;
@@ -33,13 +37,20 @@
 }
 .vtree .box {
 	display: inline-block;
-	margin-top: 1em;
+	position: relative;
+}
+
+/* Part II : customization */
+
+.vtree li {
+	border-left: 2px solid #4A7EBB;
+	margin-left: 3em;
 }
 .vtree .box {
+	margin-top: 1em;
 	width: 12em;
 	border: #8EB4E3 medium solid;
 	border-radius: 1em;
 	padding: 0.5em;
 	text-align: left;
-	position: relative;
 }
